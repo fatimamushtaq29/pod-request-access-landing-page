@@ -1,0 +1,9 @@
+@use '../abstracts' as *;
+
+.logo {
+    margin-block: clamp(3.875rem, 2.802rem + 4.580vw, 5rem) clamp(3.563rem, 2.192rem + 5.850vw, 5rem); //from 375px to 768px
+    @include mediaQuery(laptop) {
+        margin-block: clamp(3.125rem, -0.589rem + 7.738vw, 6.375rem) clamp(6.438rem, 12.999rem + -7.291vw, 9.5rem); //from 768px to 1440px
+        padding-left: clamp(2.438rem, -6.562rem + 18.750vw, 10.313rem); //from 768px to 1440px
+    }
+}

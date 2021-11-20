@@ -1,0 +1,67 @@
+@use '../abstracts' as *;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Chivo', sans-serif;
+    position: relative;
+    background-image: url("assets/mobile/image-host.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top center;
+    @include mediaQuery(laptop) {
+        overflow: auto;
+        background-image: url("assets/tablet/image-host.jpg");
+        background-size: auto;
+        background-position: right top;
+        background-color: $blackish;
+    }
+    @include mediaQuery(laptop-l) {
+        background-image: url("assets/desktop/image-host.jpg");
+        background-position: right -180px bottom;
+    }
+    @include mediaQuery(80.625rem) {
+        background-position: right bottom;
+    }
+    .dots-pattern {
+        display: none;
+        @include mediaQuery(laptop) {
+            display: block;
+            position: absolute;
+            bottom: -15.938rem;
+            padding-left: 1.875rem;
+        }
+        @include mediaQuery(laptop-l) {
+            bottom: 0;
+            right: 0;
+            transform: translateY(4.875rem) translateY(28%);
+            padding-bottom: 4.875rem;
+        }
+    }
+}
+
+body::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $blackish;
+    opacity: 0.9;
+    z-index: 0;
+    @include mediaQuery(laptop) {
+        display: none;
+    }
+}
+
+.container {
+    @include flexCenter(column);
+    position: relative;
+    z-index: 1;
+    @include mediaQuery(laptop) {
+        align-items: flex-start;
+    }
+}

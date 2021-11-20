@@ -1,0 +1,47 @@
+@use '../abstracts' as *;
+
+main {
+    position: relative;
+    padding: 0 clamp(1.5rem, 0.605rem + 3.819vw, 2.438rem); //from 375px to 768px
+    @include mediaQuery(laptop) {
+        background-color: $blackish;
+        padding-top: clamp(5.5rem, 6.171rem + -0.745vw, 5.813rem); //from 768px to 1440px
+        padding-right: clamp(2.438rem, -0.276rem + 5.655vw, 4.813rem); //from 768px to 1440px
+        padding-left: clamp(2.438rem, -6.562rem + 18.750vw, 10.313rem); //from 768px to 1440px
+    }
+}
+
+h1 {
+    font-size: clamp(1.625rem, 0.313rem + 5.598vw, 3rem); //from 375px to 768px
+    font-weight: $light;
+    line-height: clamp(2.375rem, 1.302rem + 4.580vw, 3.5rem); //from 375px to 768px
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    &::first-line {
+        color: $neon-green;
+    }
+    @include mediaQuery(laptop) {
+        text-align: left;
+        font-size: clamp(3rem, 2.714rem + 0.595vw, 3.25rem); //from 768px to 1440px
+        line-height: clamp(3.5rem, 3.071rem + 0.893vw, 3.875rem); //from 768px to 1440px
+    }
+}
+
+.description {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 27.813rem;
+    margin-block: clamp(1rem, 0.105rem + 3.819vw, 1.938rem) clamp(2.0625rem, 1.645rem + 1.781vw, 2.5rem); //from 375px to 768px
+    font-size: clamp(0.9375rem, 0.759rem + 0.763vw, 1.125rem); //from 375px to 768px
+    font-weight: $light;
+    line-height: clamp(1.5625rem, 1.384rem + 0.763vw, 1.75rem); //from 375px to 768px
+    color: $white-grey;
+    text-align: center;
+    @include mediaQuery(laptop) {
+        text-align: left;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: clamp(1.5rem, 2.439rem + -1.043vw, 1.938rem); //from 768px to 1440px
+    }
+}

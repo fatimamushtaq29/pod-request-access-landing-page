@@ -1,0 +1,31 @@
+@use '../abstracts' as *;
+
+.podcast-logos {
+    @include flexCenter(row);
+    justify-content: space-between;
+    padding: 0 0.375rem;
+    margin-bottom: clamp(3rem, 2.046rem + 4.071vw, 4rem); //from 375px to 768px
+    & .spotify {
+        width: clamp(3.5rem, 1.115rem + 10.178vw, 6rem);
+        height: clamp(1.063rem, 0.347rem + 3.053vw, 1.813rem);
+    }
+    & .apple-podcast {
+        width: clamp(2.813rem, 0.845rem + 8.395vw, 4.875rem);
+        height: clamp(1.063rem, 0.347rem + 3.053vw, 1.813rem);  
+    }
+    & .google-podcasts {
+        width: clamp(4.563rem, 1.462rem + 13.232vw, 7.813rem);
+        height: clamp(0.688rem, 0.271rem + 1.779vw, 1.125rem);
+    }
+    & .pocket-casts {
+        width: clamp(4.813rem, 1.712rem + 13.232vw, 8.063rem);
+        height: clamp(0.938rem, 0.283rem + 2.797vw, 1.625rem);
+    }
+    @include mediaQuery(laptop) {
+        padding: 0;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 0;
+        column-gap: 2.375rem;
+    }
+}

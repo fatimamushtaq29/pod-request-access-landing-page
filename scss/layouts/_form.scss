@@ -1,0 +1,77 @@
+@use '../abstracts' as *;
+
+form {
+    padding-bottom: 100%;
+    position: relative;
+    @include mediaQuery(laptop) {
+        width: 26.688rem;
+        padding-bottom: 6rem;
+    }
+}
+
+input, button {
+    display: block;
+    border-style: none;
+    width: 100%;
+    border-radius: 1.75rem;
+    padding-block: 0.563rem;
+    font-size: 0.875rem;
+    font-weight: bold;
+    line-height: 1.75rem;
+}
+
+input {
+    padding-left: 2rem;
+    background-color: $blue-dark-grey;
+    color: white;
+    @include mediaQuery(laptop) {
+        padding-block: 0.875rem;
+    }
+}
+
+::placeholder {
+    color: $placeholder-grey;
+}
+
+button {
+    background-color: $neon-green;
+    color: $blackish;
+    transition: background-color 250ms;
+    &:hover {
+        background-color: $hover-green;
+        cursor: pointer;
+    }
+    @include mediaQuery(laptop) {
+        position: absolute;
+        top: 0.313rem;
+        right: 0.313rem;
+        width: 10.125rem;
+    }   
+}
+
+.form-control {
+    position: relative;
+    margin-bottom: 1rem;
+    small {
+        padding-left: 2rem;
+        padding-top: 0.5rem;
+        padding-bottom: 1rem;
+        color: red;
+        font-size: 0.75rem;
+        position: absolute;
+        display: none;
+    }
+    @include mediaQuery(laptop) {
+        margin-bottom: 0;
+    }
+}
+
+.form-control.error {
+    padding-bottom: 1rem;
+    & small {
+        display: block;
+    }
+    @include mediaQuery(laptop) {
+        padding-bottom: 0;
+    }
+}
