@@ -38,8 +38,8 @@ Desktop-Active Screenshot: ![](./screenshot-desktop-active.JPG)
 
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/solutions/responsive-meet-landing-page-using-css-grid-and-flexbox-dPHolJJZx](https://www.frontendmentor.io/solutions/responsive-meet-landing-page-using-css-grid-and-flexbox-dPHolJJZx)
-- Live Site URL: [https://fatimamushtaq29.github.io/meet-landing-page/](https://fatimamushtaq29.github.io/meet-landing-page/)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-landing-page-with-email-validation-in-js-LWw8kKSSb](https://www.frontendmentor.io/solutions/responsive-landing-page-with-email-validation-in-js-LWw8kKSSb)
+- Live Site URL: [https://fatimamushtaq29.github.io/pod-request-access-landing-page/](https://fatimamushtaq29.github.io/pod-request-access-landing-page/)
 
 ## My process
 
