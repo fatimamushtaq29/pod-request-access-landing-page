@@ -64,6 +64,6 @@ I learned about client-side form validation and incorporated regex to validate e
 
 ## Author
 
-- Website - [Fatima Mushtaq](https://github.com/fatimamushtaq29)
+- Github - [Fatima Mushtaq](https://github.com/fatimamushtaq29)
 - Frontend Mentor - [fatimamushtaq29](https://www.frontendmentor.io/profile/fatimamushtaq29)
 - LinkedIn - [Fatima Mushtaq](https://www.linkedin.com/in/fatima-mushtaq-2aa733107/)

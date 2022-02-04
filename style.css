@@ -76,7 +76,7 @@ body {
 @media (min-width: 64rem) {
   body {
     background-image: url("assets/desktop/image-host.jpg");
-    background-position: right -180px bottom;
+    background-position: right -11.25rem bottom;
   }
 }
 @media (min-width: 80.625rem) {

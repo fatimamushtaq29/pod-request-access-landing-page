@@ -20,7 +20,7 @@ body {
     }
     @include mediaQuery(laptop-l) {
         background-image: url("assets/desktop/image-host.jpg");
-        background-position: right -180px bottom;
+        background-position: right -11.25rem bottom;
     }
     @include mediaQuery(80.625rem) {
         background-position: right bottom;
